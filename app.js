@@ -4,7 +4,7 @@ tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF"
 tg.MainButton.Color = "#33cc18"
-tg.MainButton.text("Авторизоваться");
+tg.MainButton.text = "Авторизоваться";
 tg.MainButton.show();
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
