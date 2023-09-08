@@ -7,10 +7,16 @@ tg.MainButton.Color = "#33cc18";
 tg.MainButton.text = "Авторизоваться";
 function themeChanger() {
     tg.MainButton.show();
-}
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.sendData("1");
+    telegramApp.MainButton.onClick(function send() {
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var text = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+        let kek = '{\n\t"username": "' + text + '",\n\t"userid": "' + password + '"\n}';
+        telegramApp.sendData(kek);
 })
+})
+}
 
 let = usercard = document.getElementById("usercard");
 
@@ -18,4 +24,4 @@ let p = document.createElement("p");
 
 p.innerText = `${tg.initDataUnsafe.user.id}`
 
-usercard.appendChild(p)
+usercard.appendChild(p);
