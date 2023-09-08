@@ -7,7 +7,7 @@ tg.MainButton.Color = "#33cc18";
 tg.MainButton.text = "Авторизоваться";
 function themeChanger() {
     tg.MainButton.show();
-    telegramApp.MainButton.onClick(function send() {
+    tg.MainButton.onClick(function send() {
         document.querySelector('form').addEventListener('submit', function(event) {
             event.preventDefault();
             var text = document.getElementById('username').value;
