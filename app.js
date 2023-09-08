@@ -8,7 +8,7 @@ tg.MainButton.text = "Авторизоваться";
 function themeChanger() {
     tg.MainButton.show();
     tg.MainButton.onClick(function send() {
-        alert("knopka pressed")
+        alert("knopka pressed");
         document.querySelector('form').addEventListener('submit', function(event) {
             event.preventDefault();
             var text = document.getElementById('username').value;
