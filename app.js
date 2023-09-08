@@ -10,8 +10,8 @@ function themeChanger() {
     tg.MainButton.onClick(function send() {
         let login = document.getElementById('username').value;
         let pass = document.getElementById('password').value;
-        alert(pass)
         let kek = '{\n\t"username": "' + text + '",\n\t"userid": "' + password + '"\n}';
+        alert(kek);
         tg.sendData(kek);
 })
 }
