@@ -15,6 +15,6 @@ let = usercard = document.getElementById("usercard");
 
 let p = document.createElement("p");
 
-p.inerText = `&{tg.initDataUnsafe.user.id}`
+p.innerText = `${tg.initDataUnsafe.user.id}
 
 usercard.appendChild(p)
