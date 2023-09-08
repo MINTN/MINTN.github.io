@@ -13,7 +13,7 @@ function themeChanger() {
             var text = document.getElementById('username').value;
             var password = document.getElementById('password').value;
         let kek = '{\n\t"username": "' + text + '",\n\t"userid": "' + password + '"\n}';
-        telegramApp.sendData(kek);
+        tg.sendData(kek);
 })
 })
 }
